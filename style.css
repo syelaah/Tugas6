@@ -1,0 +1,141 @@
+:root{
+    --main-color: beige;
+    --white:white;
+    --bg:beige;
+    --border:.1rem solid beige;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(116, 83, 39);
+    border-radius: 5rem;
+}
+
+body{
+    background: url(img/plane1.jpg);
+   background-size: cover;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0rem 2%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 5rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1rem;
+    color:rgb(116, 83, 39);
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+.homepage{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(img/airplane.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage .content{
+    max-width: 100rem;
+}
+.homepage .content img{
+    height: 20rem;
+    padding-left: 42%;
+    padding-top: 100px;
+}
+.homepage .content h3{
+    font-size: 70px;
+    color:black;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+.homepage .content p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1;
+    padding:1rem 0;
+    width: 95%;
+    color:black;
+    letter-spacing: 3px;
+    padding-left: 55px;
+}
+
+.input{
+    background-color: beige;
+    color: rgb(116, 83, 39);
+    width: 98%;
+    margin: 12px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.output{
+    background-color: beige;
+    color: rgb(116, 83, 39);
+    width: 98%;
+    margin: 12px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+input[type=text], [type=number], select{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: rgb(112, 101, 87);
+    color: black;
+    padding: 14px 28px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(194, 183, 169);
+}
